@@ -1,0 +1,244 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Four card feature section</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+
+        .body {
+            width: 1440px;
+        }
+
+        .row {
+            background-color: hsl(257, 40%, 49%);
+            background-image: url('../../img/bg-desktop.svg');
+            width: 100%;
+            padding-bottom: 70px;
+        }
+
+        .logo {
+            margin-left: 100px;
+            margin-top: 70px;
+        }
+
+        .sol {
+            float: left;
+            width: 60%;
+        }
+
+        .sag {
+            float: left;
+            width: 40%;
+        }
+
+        .genisekran {
+            margin-left: 100px;
+            margin-top: 60px;
+            width: 100%;
+        }
+
+        .text1 {
+            margin-left: 30px;
+            margin-top: 100px;
+            width: 70%;
+        }
+
+        .text2 {
+            width: 83%;
+            margin-left: 30px;
+            margin-top: 40px;
+        }
+
+        .button {
+            background-color: white;
+            color: hsl(257, 40%, 49%);
+            margin-top: 30px;
+            margin-left: 30px;
+            width: 35%;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .logo2 {
+            float:left;
+            background-color: hsl(257, 40%, 49%);
+            width: 5%;
+            padding-top:1px;
+            padding-left:6px;
+            padding-right:8px;
+            margin-top:170px;
+            margin-left:270px;
+            border: solid 1px;
+            border-color: white;
+            text-align:center;
+            border-radius:15px;
+        }
+        .logo3 {
+            float: left;
+            background-color: hsl(257, 40%, 49%);
+            width: 5%;
+            padding-top: 2px;
+            padding-left: 4px;
+            padding-right:12px;
+            margin-top:169px;
+            margin-left:10px;
+            border: solid 1px;
+            border-color: white;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .logo4 {
+            float: left;
+            background-color: hsl(257, 40%, 49%);
+            width: 5%;
+            padding-top: 2px;
+            padding-left: 4px;
+            padding-right: 12px;
+            margin-top:168px;
+            margin-left:10px;
+            border: solid 1px;
+            border-color: white;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .img1 {
+            height: 420px;
+        }
+        @@media only screen and (max-width:400px) {
+            .body {
+                width: 375px;
+      
+            }
+
+            .row {
+                background-color: hsl(257, 40%, 49%);
+                background-image: url('../../img/bg-mobile.svg');
+                width: 120%;
+            }
+
+            .logo {
+                margin-left: 50px;
+                margin-top: 10px;
+            }
+
+            .genisekran {
+                margin-top: 20px;
+                margin-left: 50px;
+            }
+
+            .img1 {
+                height: 200px;
+            }
+
+            .sag {
+                width: 110%;
+            }
+
+            .text1 {
+                margin-top: 40px;
+                margin-left: 20px;
+                width: 75%;
+                text-align: center;
+            }
+
+            .text2 {
+                margin-top: 30px;
+                margin-left: 30px;
+                width: 72%;
+                text-align: center;
+            }
+
+            .button {
+                margin-top: 30px;
+                margin-left: 80px;
+                width: 50%;
+            }
+
+            .logo2 {
+                float: left;
+                width: 5%;
+                margin-top: 30px;
+                margin-left: 145px;
+            }
+
+            .logo3 {
+                float: left;
+                width: 5%;
+                margin-top:30px;
+                margin-left:15px;
+            }
+            .logo4 {
+                float: left;
+                width: 5%;
+                margin-top: 30px;
+                margin-left: 15px;
+            }
+            
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="logo">
+            <img style="height:45px;" src="~/img/logo.svg" />
+        </div>
+        <div class="sol">
+            <div class="genisekran">
+                <img class="img1"src="~/img/illustration-mockups.svg" />
+            </div>
+        </div>
+        <div class="sag">
+            <div class="text1">
+                <h2 style="color:white;"><b>Build The Community <br /> Your Fans Will Love</b> </h2>
+            </div>
+            <div class="text2">
+                <h5 style="color:white;">
+                    Huddle re-imagines the way we build communities. You have <br /> a voice, but so does your audience.
+                    Create connections with <br /> your users as you engage in genuine discussion.
+                </h5>
+            </div>
+            <div class="button">
+                Register
+            </div>
+            <div class="logo2">
+                <i class="fab fa-facebook-f" style="color:white;"></i>
+            </div>
+            <div class="logo3">
+                <i class="fab fa-twitter"style="color:white;"></i>
+            </div>
+            <div class="logo4">
+                <i class="fab fa-instagram" style="color:white;"></i>
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>
